@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beauty The Crazy Dog</title>
+
+<style>
+body {
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:#0a0a0a;
+  overflow:hidden;
+  color:white;
+}
+
+.dex-runner {
+  position:fixed;
+  width:100%;
+  top:20px;
+  display:flex;
+  gap:60px;
+  animation: runDex 12s linear infinite;
+}
+
+.dex-runner img {
+  height:60px;
+}
+
+@keyframes runDex {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.hero {
+  text-align:center;
+  padding-top:120px;
+}
+
+.hero img {
+  width:280px;
+  border-radius:20px;
+  box-shadow:0 0 40px #00ffcc;
+}
+
+h1 {
+  font-size:3em;
+  background: linear-gradient(90deg,#00ffcc,#ff00ff);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+button {
+  margin:20px;
+  padding:15px 30px;
+  font-size:18px;
+  border:none;
+  border-radius:10px;
+  background:linear-gradient(90deg,#00ffcc,#ff00ff);
+  color:white;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+button:hover {
+  transform:scale(1.1);
+}
+</style>
+</head>
+
+<body>
+
+<div class="dex-runner">
+  <img src="https://cryptologos.cc/logos/raydium-ray-logo.png" />
+  <img src="https://cryptologos.cc/logos/jupiter-jup-logo.png" />
+  <img src="https://cryptologos.cc/logos/raydium-ray-logo.png" />
+  <img src="https://cryptologos.cc/logos/jupiter-jup-logo.png" />
+</div>
+
+<div class="hero">
+  <img src="logo.png">
+  <h1>Beauty The Crazy Dog</h1>
+  <p>Even a memecoin can be scarcer than fiat.</p>
+
+  <button onclick="window.open('https://raydium.io')">Buy on Raydium</button>
+  <button onclick="window.open('https://jup.ag')">Buy on Jupiter</button>
+
+  <p>Supply: 2,000,000,000</p>
+  <p>Contract: GTXhHR7tDPA1tT4d4v45MTyhhYZUQycHK2t92C8Fpump</p>
+
+  <button onclick="window.open('https://x.com/Beutycrazydog')">Follow on X</button>
+</div>
+
+</body>
+</html>
